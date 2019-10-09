@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+}
+ 
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #1E90FF;
+}
+
+p{
+    font-family: Times New Roman;
+    font-size: 20px;
+    padding-top:0;
+}
+ 
+.header {
+    color:white;
+    font-family: "Century Gothic"
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;    
+    background: #ff8519;
+}
+ 
+/*.nav {
+    overflow: hidden;
+    background-color: #1E90FF;
+}
+ 
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ 
+.nav a:hover {
+    background-color: orange;
+    color: black;
+}
+ */
+.content {   
+    float: left;
+    width: 75%;
+    height: 100%;    
+}
+ 
+.sidebar {
+    float: right;
+    position: relative;    
+    width: 25%;
+    margin-top: 10px;    
+    background-color: #f1f1f1;
+    padding-left: 10px;
+}
+ 
+.img {
+    background-color: #aaa;
+    width: 100%;
+}
+ 
+.card {
+     background-color: white;
+     padding: 15px;
+     margin-top: 10px;
+     height: 120%;
+}
+.widget{
+     background-color: white;
+     padding: 10px;
+     margin-top:38px;   
+     margin-right: 10px;
+     margin-bottom: 15px;     
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
+.footer {
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+    display: inline-block;
+    float: left;    
+}
+ 
+ 
+@media (max-width: 800px) {
+    .content, .sidebar,.footer{   
+        width: 100%;
+        padding: 0;
+    }     
+}
+ 
+@media (max-width: 400px) {
+    .nav a {
+        float: none;
+        width:100%;
+    }
+}
+
+.dropbtn{
+    display: block;
+    color: #666666;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav {
+    
+    background-color: #E64A19;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: -20px;
+  margin-bottom: -10px;
+    list-style: none;
+    position: relative;
+    }
+    
+nav ul li {
+    display:inline-block;
+    background-color: #E64A19;
+    }
+
+nav a {
+    display:block;
+    padding:0 20px; 
+    color:#FFF;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+nav a:hover { 
+    background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute; 
+    top: 60px; /* the height of the main nav */
+}
+    
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;    
+    margin-top: 0px;
+}
+    
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:400px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: relative;
+    top:-60px; 
+    left:170px;
+}
+
