@@ -3,15 +3,18 @@
 <head>
 	<title>Web TI</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 <body bgcolor="blue">
-
+  <script src="bootstrap.js">
+    $('.alert').alert()
+  </script>
 <!--Bagian Header-->
 <div class="header">
   <br>
-  <img src="POLINDRA.png" style="width: 200px">
-  <h3 style="margin-top: -10px;">TEKNIK INFORMATIKA</h3>
-  <p style="margin-top: -50px; padding-bottom: 30px">Jalan Raya Lohbener Lama Nomor 08 Lohbener Indramayu</p>
+  <img src="POLINDRA.png" style="width: 100px">
+  <h3>TEKNIK INFORMATIKA</h3>
+  <p>Jalan Raya Lohbener Lama Nomor 08 Lohbener Indramayu</p>
 </div>
 
 <!-- Bagian Navigasi-->
@@ -36,7 +39,7 @@
         </ul>
 </nav>
 
-<!-- Bagina Konten Home-->
+<!-- Bagian Konten Home-->
 <div class="row">
   <div class="content">
     <div class="card" id="homeview">
@@ -122,17 +125,25 @@
     </div>
 
 <!--Konten didalam sidebar-->
-  <div class="sidebar">    
-    <div class="widget">   
+  <div class="sidebar">
+    <div class="widget" class="close" data-dismiss="alert" aria-label="Close">   
     <div align="center">Berikan Pesan Kepada Admin</div>         
       <form action="" method="POST">
-        <strong>Nama Lengkap</strong> <br>
-        <input type="text" name="" placeholder="Nama Lengkap" style="width: 100%; height: 50%;"><br>
-        <strong>Email</strong>
-        <input type="email" name="" placeholder="Alamat Email" style="width: 100%; height: 50%;"><br>
-        <strong>Isi Pesan</strong><br>
-        <textarea placeholder="Isi Pesan" cols="50" rows="16"></textarea> <br>
-        <button type="submit" name="Save"> Simpan</button>        
+        <div class="form-group">
+          <label for="exampleInputNama"><strong>Nama Lengkap</strong> </label> <br>
+           <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nama Lengkap" required style="width: 100%; height: 50%;">
+           <small id="emailHelp" class="form-text text-muted"></small><br>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail"><strong>Nama Lengkap</strong> </label> <br>
+           <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nama Lengkap" required style="width: 100%; height: 50%;">
+           <small id="emailHelp" class="form-text text-muted">We'll never your email with anyone else.</small><br>
+        </div>
+        <div class="input-group">
+         <label for="exampleInputMessage"><strong>Isi Pesan</strong> </label>
+        </div>
+          <textarea placeholder="Isi Pesan"></textarea> <br>
+        <button type="submit" name="Save"> Simpan</button>     
       </form>
     </div>
   </div>
@@ -168,6 +179,7 @@ Program Studi Terdepan di bidang Teknik Informatika<br> Tingkat Nasional dan Ber
 
 <!--Bagian JavaScript-->
 <script type="text/javascript">
+
   var home = document.getElementById('homenih');
   var d3ti = document.getElementById('ti');
   var d4rpl = document.getElementById('rpl');
